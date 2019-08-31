@@ -8,60 +8,32 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>list</title>
-
+    <title>read</title>
     <style>
-div.border-dark:hover { 
-    background-color: #e0e0e0;
-}
-a.navbar-brand:hover{
-    background-color: #e0e0e0;
-}
+            a.navbar-brand:hover{
+                background-color: #e0e0e0;
+            }
     </style>
+            
 </head>
 <body class="container py-5">
 
-    <nav class="navbar navbar-light bg-list my-2 border border-dark rounded">
+    <nav class="navbar navbar-light bg-light my-2 border border-dark rounded">
         <a class="navbar-brand" href="/">home</a>
     </nav>
 
+
     <div class=" border px-3">
-        <h1 class="my-3">Hello, world!</h1>
         <div class="d-flex justify-content-end py-3">
-            <a class="btn btn-info" href="write/" role="button"><i>Write</i></a>
+            <a class="btn btn-primary" href="/write/" role="button">수정</a>
+            <button type="button" class="mx-1 btn btn-danger">삭제</button>
         </div>
-
-<!-- 1 -->
-        <div style=" cursor: pointer;" onclick="location.href='read/';" class="p-3 border border-dark rounded my-1">
-            <h5 class="">Card title</h5>
-            <p class="py-0">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <p class="py-0"><small class="text-muted"><i>Last updated 3 mins ago</i></small></p>
-        </div>
-
-        <!-- table -->
-<!--         <table class="table table-hover ">
-                <thead>
-                    <tr>
-                        <th scope="col">Title</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Mark</td>
-                    </tr>
-                    <tr>
-                        <td>Jacob</td>
-                    </tr>
-                    <tr>
-                        <td >Larry the Bird</td>
-                    </tr>
-                </tbody>
-            </table>
- -->        
+            
+        <h1 class="my-3">title</h1>
+        <p class="my-4 text-right" style="font-size:1.1rem;"><i>time</i></p>
+        <p class="my-4 " style="font-size:1.5rem;">content</p>
 
     </div>
-
-    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

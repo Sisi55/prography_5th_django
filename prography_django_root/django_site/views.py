@@ -9,6 +9,11 @@ def home_list(request):
     return render(request, 'list.html')#, context)
 
 
-def detail_view(request):
+def write_view(request):
 
-    return render(request, 'detail.html')
+    return render(request, 'write.html')
+
+
+def read_view(request):
+
+    return render(request, "read.html")
