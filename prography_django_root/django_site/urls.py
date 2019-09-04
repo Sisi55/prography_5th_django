@@ -4,6 +4,7 @@ from . import views
 
 app_name='posting'
 urlpatterns = [
+    
     path('write/save/', views.save_view), #게시글 저장
     path('delete/<int:post_number>/', views.delete_view),
     path('read/<int:post_number>/', views.read_view, name='read'), #매개변수 추가

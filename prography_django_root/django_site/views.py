@@ -110,6 +110,7 @@ def delete_view(request, post_number):
 
     return redirect('/')
 
+
 def write_view(request, post_number=-1):
 
     context = {}
@@ -163,6 +164,7 @@ def save_view(request): #수정하면 포스트 넘버는 그대로, 날짜는 �
             transaction = firestore.client().transaction()
             info_ref = firestore.client().collection(u'info').document(u'posting_info')
 
+            # 기본키 역할을 하는 변수의 트랜잭션 처리
             @firestore.transactional # 단순 1 증가하는 함수
             def update_in_transaction(transaction, info_ref):
                 snapshot = info_ref.get(transaction=transaction)
